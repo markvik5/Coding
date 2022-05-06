@@ -1,0 +1,20 @@
+ $ ssh-keygen -t ed25519 -C "vikash.kunj1996@gmail.com"  -- creating ssh keygen
+ ls -al ~/.ssh     --checking ssh keygen
+ $ eval "$(ssh-agent -s)  -- creating agent
+ $ ssh-add ~/.ssh/id_ed25519   --aading id_ed25519
+ $ clip < ~/.ssh/id_ed25519.pub   --copying ssh key then add in GIT
+ 
+ 
+ git config:
+ >git config --global user.name "vikash kunj"
+ git config --global user.email "vikash.kunj1996@gmail.com"
+ 
+ git clone "****"
+ git checkout "branch name"
+ 
+ ##### push
+ git status 
+ git add *   -- staging
+ git commit -m ""  -- commiting
+ git push origin master
+
